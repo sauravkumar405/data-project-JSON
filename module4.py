@@ -24,6 +24,6 @@ def function(DataSet):
                 years_hashmap[entry['Region']][entry['Year']] = float(entry['Population'])
             else:
                 years_hashmap[entry['Region']] = [float(entry['Population'])]
-    out_file = open("/home/saurabh/Desktop/project/data-project-javascript/myfile4.json", "w")
+    out_file = open("myfile4.json", "w")
     json.dump(years_hashmap, out_file, indent=2)
     out_file.close()

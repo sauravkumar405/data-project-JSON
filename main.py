@@ -6,7 +6,7 @@ import module4
 
 
 def fetchdata():
-    file_handle = open("/home/saurabh/Desktop/project/data-project-javascript/DataSet/data.csv", "r")
+    file_handle = open("DataSet/data.csv", "r")
     DataSet = DictReader(file_handle)
     return DataSet
 
